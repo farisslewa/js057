@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic Tac Toe</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="mode-box">
+				<label>Display Mode</label>
+				<select id="mode">
+					<option value="dark">Dark Mode</option>
+					<option value="light">Light Mode</option>
+				</select>
+			</div>
+			<div class="players-box">
+				<div class="player-box">
+					<div>
+						<label for="player1name">Player1 Name: </label>
+						<input id="player1name" type="text" placeholder="Your Name" />
+					</div>
+					<div class="symbol-box">
+						<label>Player1 Symbol: </label>
+						<input
+							type="radio"
+							name="1"
+							value="x"
+							class="player1symbolx"
+							checked="checked"
+						/>
+						<img class="symbol" src="imgs/x.png" />
+						<input type="radio" name="1" value="o" class="player1symbolo" />
+						<img class="symbol" src="imgs/o.png" />
+					</div>
+				</div>
+				<div class="player-box">
+					<div class="symbol-box">
+						<label for="player2name">Player2 Name: </label>
+						<input id="player2name" type="text" placeholder="Your Name" />
+					</div>
+					<div class="symbol-box">
+						<label>Player2 Symbol: </label>
+						<input type="radio" name="2" value="x" class="player2symbolx" />
+						<img class="symbol" src="imgs/x.png" />
+						<input
+							type="radio"
+							name="2"
+							value="o"
+							class="player2symbolo"
+							checked="checked"
+						/>
+						<img class="symbol" src="imgs/o.png" />
+					</div>
+				</div>
+			</div>
+			<button class="start-game btn">Start Game</button>
+			<p class="game-info">click start game</p>
+			<div class="game-box">
+				<div class="game-display">
+					<div class="img-box img-box-1">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-2">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-3">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-4">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-5">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-6">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-7">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-8">
+						<img class="imgs" />
+					</div>
+					<div class="img-box img-box-9">
+						<img class="imgs" />
+					</div>
+				</div>
+			</div>
+			<button class="new-game btn">New Game</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
